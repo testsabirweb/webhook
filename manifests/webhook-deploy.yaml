@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spectro-webhook
+  labels:
+    app: spectro-webhook
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: spectro-webhook
+      labels:
+        app: spectro-webhook
+    spec:
+      volumes:
+        - name: certs
+          secret:
+            secretName: tls
+      containers:
+        - name: webhook
+          image: spectro_webhook:v1
+          imagePullPolicy: Never
+          volumeMounts:
+            - mountPath: /etc/certs
+              name: certs
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: spectro-webhook
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: spectro-webhook
+spec:
+  selector:
+    app: spectro-webhook
+  ports:
+    - port: 8080
+      targetPort: 8080
+  type: ClusterIP
