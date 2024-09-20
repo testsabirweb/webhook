@@ -1,0 +1,25 @@
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+metadata:
+  name: spectro-webhook
+webhooks:
+  - name: spectro-webhook.default.svc.cluster.local
+    admissionReviewVersions:
+      - "v1"
+    sideEffects: "None"
+    timeoutSeconds: 30
+    objectSelector:
+      matchLabels:
+        spectro: "true"
+    clientConfig:
+      service:
+        name: spectro-webhook
+        namespace: default
+        path: "/mutate"
+        port: 8080
+      caBundle: "CA-CERT"
+    rules:
+      - operations: [ "CREATE" ]
+        apiGroups: [""]
+        apiVersions: ["v1"]
+        resources: ["pods"]

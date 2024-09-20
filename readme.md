@@ -22,3 +22,10 @@ sudo cp tls.crt tls.key /etc/certs
 ```bash
 kubectl create secret tls tls --cert=tls.crt --key=tls.key
 ```
+
+#### Webhook
+```bash
+CA_CERT=$(cat tls.crt | base64 | tr -d '\n')
+sed -e 's@CA-CERT@'"$CA_CERT"'@g' <"manifests/webhook-template.yaml" > manifests/webhook.yaml
+kubectl apply -f manifests/webhook.yaml
+```

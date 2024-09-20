@@ -4,3 +4,4 @@ go.sum
 tls.crt
 tls.csr
 tls.key
+manifests/webhook.yaml
