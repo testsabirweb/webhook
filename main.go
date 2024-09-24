@@ -18,7 +18,7 @@ func cleanWord(word string) string {
 	return sb.String()
 }
 
-func readFile(filename string, wg *sync.WaitGroup) {
+func readFile(filename string, wg *sync.WaitGroup, wordchan chan string) {
 	defer wg.Done()
 
 	data, err := os.ReadFile(filename)
@@ -34,10 +34,18 @@ func readFile(filename string, wg *sync.WaitGroup) {
 		cleanedWord := cleanWord(word)
 		if cleanedWord != "" {
 			wordCount[cleanedWord]++
+			wordchan <- cleanedWord
 		}
 	}
 
-	fmt.Println(filename, wordCount)
+	// fmt.Println(filename, wordCount)
+}
+
+func countWords(totalWordCount map[string]int, wordchan chan string, done chan bool) {
+	for word := range wordchan {
+		totalWordCount[word]++
+	}
+	done <- true
 }
 
 func main() {
@@ -45,9 +53,23 @@ func main() {
 
 	var wg sync.WaitGroup
 
+	wordchan := make(chan string)
+	totalWordCount := make(map[string]int)
+
 	for _, filename := range filenames {
 		wg.Add(1)
-		go readFile(filename, &wg)
+		go readFile(filename, &wg, wordchan)
 	}
-	wg.Wait()
+
+	go func() {
+		wg.Wait()
+		close(wordchan)
+	}()
+
+	done := make(chan bool)
+
+	go countWords(totalWordCount, wordchan, done)
+	<-done
+	close(done)
+	fmt.Println(totalWordCount)
 }
