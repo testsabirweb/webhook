@@ -3,10 +3,16 @@ package main
 import (
 	"fmt"
 	"os"
+	"sort"
 	"strings"
 	"sync"
 	"unicode"
 )
+
+type wordFreq struct {
+	word  string
+	count int
+}
 
 func cleanWord(word string) string {
 	var sb strings.Builder
@@ -50,7 +56,6 @@ func countWords(totalWordCount map[string]int, wordchan chan string, done chan b
 
 func main() {
 	filenames := []string{"file1.txt", "file2.txt", "file3.txt"}
-
 	var wg sync.WaitGroup
 
 	wordchan := make(chan string)
@@ -67,9 +72,23 @@ func main() {
 	}()
 
 	done := make(chan bool)
-
 	go countWords(totalWordCount, wordchan, done)
 	<-done
 	close(done)
 	fmt.Println(totalWordCount)
+
+	fmt.Println("####################")
+	sortedWords := sortByFrequency(totalWordCount)
+	fmt.Println(sortedWords[:10])
+}
+
+func sortByFrequency(wordCount map[string]int) []wordFreq {
+	var wordList []wordFreq
+	for word, count := range wordCount {
+		wordList = append(wordList, wordFreq{word, count})
+	}
+	sort.Slice(wordList, func(i, j int) bool {
+		return wordList[i].count > wordList[j].count
+	})
+	return wordList
 }

@@ -1,0 +1,1286 @@
+2024-09-18 18:04:34.953894 105 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:04:34.953933 105 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:04:34.953935 105 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:04:34.953937 105 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:04:34.953939 105 I runtests [CMD] -d
+2024-09-18 18:04:34.953940 105 I runtests [CMD] zrpc.queued_rpc.integration.e2e
+2024-09-18 18:04:34.953944 105 N runtests Running with 4 junction threads
+2024-09-18 18:04:34.955333 105 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:04:34.955351 105 I runtests Using seed 2700264636 for picking random set of tests
+2024-09-18 18:04:34.955390 105 N runtests ------------------------------------------------------------
+2024-09-18 18:04:34.955393 105 N runtests [zrpc.queued_rpc.integration.e2e] begin (0)
+2024-09-18 18:04:34.955394 105 N runtests ------------------------------------------------------------
+2024-09-18 18:04:34.955484 105 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=fe80::ac12:7ff:feaa:4b17%veth1, client_port=8000, server_iface=veth2, server_ip=fe80::280d:8bff:fe67:8c86%veth2, server_port=8001, vlan=0>
+2024-09-18 18:04:34.955672 105 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=nullopt, inet=fe80::ac12:7ff:feaa:4b17:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=nullopt, inet=fe80::280d:8bff:fe67:8c86:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7f4cbc55b000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7f4cbc49a000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7f4cb849a000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:04:34.966726 105 I zrpc.test.queued_rpc_integration Random seed for test is 842028503
+2024-09-18 18:04:35.067693 105 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:04:35.067762 105 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+2024-09-18 18:04:35.071253 105 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:04:35.071358 105 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:04:35.071372 105 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:04:35.071374 105 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:35.071380 105 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 1500
+2024-09-18 18:04:35.071398 105 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:04:35.071402 105 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:04:35.071403 105 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:35.071406 105 I zrpc.test.queued_rpc_integration sending rpc with buffer size 1500, mtu 1500
+2024-09-18 18:04:35.071445 105 I zrpc.test.queued_rpc_integration trying to read up to 1564 bytes
+2024-09-18 18:04:35.071448 105 I zrpc.test.queued_rpc_integration received 1438 bytes, 1438 total
+2024-09-18 18:04:35.071450 105 I zrpc.test.queued_rpc_integration trying to read up to 126 bytes
+2024-09-18 18:04:35.071453 105 I zrpc.test.queued_rpc_integration received 126 bytes, 1564 total
+2024-09-18 18:04:35.071454 105 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:35.071457 105 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:04:35.071565 105 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:04:35.071570 105 I zrpc.test.queued_rpc_integration received 1438 bytes, 1438 total
+2024-09-18 18:04:35.071572 105 I zrpc.test.queued_rpc_integration trying to read up to 1658 bytes
+2024-09-18 18:04:35.071574 105 I zrpc.test.queued_rpc_integration received 1438 bytes, 2876 total
+2024-09-18 18:04:35.071576 105 I zrpc.test.queued_rpc_integration trying to read up to 220 bytes
+2024-09-18 18:04:35.071578 105 I zrpc.test.queued_rpc_integration received 220 bytes, 3096 total
+2024-09-18 18:04:35.071579 105 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:35.074748 105 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:04:35.074813 105 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:04:35.074849 105 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:04:35.074851 105 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:35.074855 105 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 9216
+2024-09-18 18:04:35.074873 105 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:04:35.074876 105 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:04:35.074878 105 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:35.074880 105 I zrpc.test.queued_rpc_integration sending rpc with buffer size 9216, mtu 9216
+2024-09-18 18:04:35.075018 105 I zrpc.test.queued_rpc_integration trying to read up to 9280 bytes
+2024-09-18 18:04:35.075024 105 I zrpc.test.queued_rpc_integration received 9154 bytes, 9154 total
+2024-09-18 18:04:35.075026 105 I zrpc.test.queued_rpc_integration trying to read up to 126 bytes
+2024-09-18 18:04:35.075029 105 I zrpc.test.queued_rpc_integration received 126 bytes, 9280 total
+2024-09-18 18:04:35.075030 105 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:35.075033 105 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:04:35.075224 105 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:04:35.075230 105 I zrpc.test.queued_rpc_integration received 9154 bytes, 9154 total
+2024-09-18 18:04:35.075231 105 I zrpc.test.queued_rpc_integration trying to read up to 9374 bytes
+2024-09-18 18:04:35.075237 105 I zrpc.test.queued_rpc_integration received 9154 bytes, 18308 total
+2024-09-18 18:04:35.075239 105 I zrpc.test.queued_rpc_integration trying to read up to 220 bytes
+2024-09-18 18:04:35.075241 105 I zrpc.test.queued_rpc_integration received 220 bytes, 18528 total
+2024-09-18 18:04:35.075242 105 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:35.076305 105 I zrpc.dpdk_tools release port 0
+2024-09-18 18:04:35.138610 105 I runtests Exiting because all tests are run
+2024-09-18 18:04:35.138636 105 I runtests Ran 1/1 tests in 183.298ms
+2024-09-18 18:04:35.138639 105 N runtests ------------------------------------------------------------
+2024-09-18 18:04:35.138641 105 N runtests Slowest running tests:
+2024-09-18 18:04:35.138643 105 N runtests 183.212ms : zrpc.queued_rpc.integration.e2e
+2024-09-18 18:04:35.138645 105 N runtests ------------------------------------------------------------
+2024-09-18 18:04:42.666365 107 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:04:42.666399 107 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:04:42.666402 107 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:04:42.666404 107 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:04:42.666406 107 I runtests [CMD] -d
+2024-09-18 18:04:42.666407 107 I runtests [CMD] zrpc.queued_rpc.integration.e2e.dma
+2024-09-18 18:04:42.666411 107 N runtests Running with 4 junction threads
+2024-09-18 18:04:42.667913 107 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:04:42.667946 107 I runtests Using seed 3865809913 for picking random set of tests
+2024-09-18 18:04:42.667981 107 N runtests ------------------------------------------------------------
+2024-09-18 18:04:42.667983 107 N runtests [zrpc.queued_rpc.integration.e2e.dma] begin (0)
+2024-09-18 18:04:42.667985 107 N runtests ------------------------------------------------------------
+2024-09-18 18:04:42.668087 107 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=fe80::ac12:7ff:feaa:4b17%veth1, client_port=8000, server_iface=veth2, server_ip=fe80::280d:8bff:fe67:8c86%veth2, server_port=8001, vlan=0>
+2024-09-18 18:04:42.668276 107 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=nullopt, inet=fe80::ac12:7ff:feaa:4b17:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=nullopt, inet=fe80::280d:8bff:fe67:8c86:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7f577ac42000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7f577ab81000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7f5776b81000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:04:42.679292 107 I zrpc.test.queued_rpc_integration Random seed for test is 1294128586
+2024-09-18 18:04:42.743659 107 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:04:42.743723 107 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+EAL: WARNING! Base virtual address hint (0x100017000 != 0x7f5773b20000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:04:42.761080 107 I zrpc.dpdk_tools ir_dpdk_heap-1: External memory heap <VA=[0x7f5773b81000, 0x7f5775b81000)> usable <VA=[0x7f5773d1a980, 0x7f5775b80fe6)>
+2024-09-18 18:04:42.761418 107 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:04:42.761480 107 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:04:42.761845 107 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:04:42.761863 107 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:04:42.761865 107 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:42.761871 107 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 1500
+2024-09-18 18:04:42.761905 107 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:04:42.761909 107 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:04:42.761911 107 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:42.761913 107 I zrpc.test.queued_rpc_integration sending rpc with buffer size 1500, mtu 1500
+2024-09-18 18:04:42.761971 107 I zrpc.test.queued_rpc_integration trying to read up to 1564 bytes
+2024-09-18 18:04:42.761975 107 I zrpc.test.queued_rpc_integration received 1438 bytes, 1438 total
+2024-09-18 18:04:42.761976 107 I zrpc.test.queued_rpc_integration trying to read up to 126 bytes
+2024-09-18 18:04:42.761979 107 I zrpc.test.queued_rpc_integration received 126 bytes, 1564 total
+2024-09-18 18:04:42.761980 107 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:42.761983 107 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:04:42.762046 107 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:04:42.762049 107 I zrpc.test.queued_rpc_integration received 1438 bytes, 1438 total
+2024-09-18 18:04:42.762051 107 I zrpc.test.queued_rpc_integration trying to read up to 1658 bytes
+2024-09-18 18:04:42.762062 107 I zrpc.test.queued_rpc_integration received 1438 bytes, 2876 total
+2024-09-18 18:04:42.762064 107 I zrpc.test.queued_rpc_integration trying to read up to 220 bytes
+2024-09-18 18:04:42.762066 107 I zrpc.test.queued_rpc_integration received 220 bytes, 3096 total
+2024-09-18 18:04:42.762068 107 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:42.764580 107 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:04:42.764685 107 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-1
+EAL: WARNING! Base virtual address hint (0x10001d000 != 0x7f5773b20000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:04:42.783217 107 I zrpc.dpdk_tools ir_dpdk_heap-2: External memory heap <VA=[0x7f5773b81000, 0x7f5775b81000)> usable <VA=[0x7f5773d1a980, 0x7f5775b80fe6)>
+2024-09-18 18:04:42.783380 107 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:04:42.783422 107 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:04:42.783738 107 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:04:42.783763 107 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:04:42.783765 107 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:42.783769 107 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 9216
+2024-09-18 18:04:42.783799 107 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:04:42.783802 107 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:04:42.783804 107 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:42.783806 107 I zrpc.test.queued_rpc_integration sending rpc with buffer size 9216, mtu 9216
+2024-09-18 18:04:42.783956 107 I zrpc.test.queued_rpc_integration trying to read up to 9280 bytes
+2024-09-18 18:04:42.783963 107 I zrpc.test.queued_rpc_integration received 9154 bytes, 9154 total
+2024-09-18 18:04:42.783964 107 I zrpc.test.queued_rpc_integration trying to read up to 126 bytes
+2024-09-18 18:04:42.783967 107 I zrpc.test.queued_rpc_integration received 126 bytes, 9280 total
+2024-09-18 18:04:42.783968 107 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:42.783971 107 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:04:42.784186 107 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:04:42.784192 107 I zrpc.test.queued_rpc_integration received 9154 bytes, 9154 total
+2024-09-18 18:04:42.784194 107 I zrpc.test.queued_rpc_integration trying to read up to 9374 bytes
+2024-09-18 18:04:42.784200 107 I zrpc.test.queued_rpc_integration received 9154 bytes, 18308 total
+2024-09-18 18:04:42.784202 107 I zrpc.test.queued_rpc_integration trying to read up to 220 bytes
+2024-09-18 18:04:42.784205 107 I zrpc.test.queued_rpc_integration received 220 bytes, 18528 total
+2024-09-18 18:04:42.784206 107 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:42.785498 107 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:04:42.785580 107 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-2
+2024-09-18 18:04:42.789794 107 I zrpc.dpdk_tools release port 0
+2024-09-18 18:04:42.902496 107 I runtests Exiting because all tests are run
+2024-09-18 18:04:42.902523 107 I runtests Ran 1/1 tests in 234.606ms
+2024-09-18 18:04:42.902526 107 N runtests ------------------------------------------------------------
+2024-09-18 18:04:42.902528 107 N runtests Slowest running tests:
+2024-09-18 18:04:42.902530 107 N runtests 234.505ms : zrpc.queued_rpc.integration.e2e.dma
+2024-09-18 18:04:42.902532 107 N runtests ------------------------------------------------------------
+2024-09-18 18:04:49.425909 110 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:04:49.425944 110 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:04:49.425954 110 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:04:49.425956 110 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:04:49.425957 110 I runtests [CMD] -d
+2024-09-18 18:04:49.425959 110 I runtests [CMD] zrpc.queued_rpc.integration.e2e
+2024-09-18 18:04:49.425962 110 N runtests Running with 4 junction threads
+2024-09-18 18:04:49.427394 110 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:04:49.427413 110 I runtests Using seed 3440150 for picking random set of tests
+2024-09-18 18:04:49.427446 110 N runtests ------------------------------------------------------------
+2024-09-18 18:04:49.427449 110 N runtests [zrpc.queued_rpc.integration.e2e] begin (0)
+2024-09-18 18:04:49.427450 110 N runtests ------------------------------------------------------------
+2024-09-18 18:04:49.427559 110 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=fe80::ac12:7ff:feaa:4b17%veth1, client_port=8000, server_iface=veth2-42, server_ip=fe80::280d:8bff:fe67:8c86%veth2-42, server_port=8001, vlan=42>
+2024-09-18 18:04:49.427758 110 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=fe80::ac12:7ff:feaa:4b17:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=fe80::280d:8bff:fe67:8c86:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7f841edd1000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7f841ed10000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7f841ad10000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:04:49.438801 110 I zrpc.test.queued_rpc_integration Random seed for test is 1323425802
+2024-09-18 18:04:49.519677 110 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:04:49.519752 110 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+2024-09-18 18:04:49.523042 110 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:04:49.523150 110 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:04:49.523164 110 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:04:49.523166 110 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:49.523172 110 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 1500
+2024-09-18 18:04:49.523189 110 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:04:49.523192 110 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:04:49.523194 110 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:49.523196 110 I zrpc.test.queued_rpc_integration sending rpc with buffer size 1500, mtu 1500
+2024-09-18 18:04:49.523232 110 I zrpc.test.queued_rpc_integration trying to read up to 1564 bytes
+2024-09-18 18:04:49.523235 110 I zrpc.test.queued_rpc_integration received 1434 bytes, 1434 total
+2024-09-18 18:04:49.523237 110 I zrpc.test.queued_rpc_integration trying to read up to 130 bytes
+2024-09-18 18:04:49.523240 110 I zrpc.test.queued_rpc_integration received 130 bytes, 1564 total
+2024-09-18 18:04:49.523241 110 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:49.523243 110 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:04:49.523295 110 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:04:49.523306 110 I zrpc.test.queued_rpc_integration received 1434 bytes, 1434 total
+2024-09-18 18:04:49.523307 110 I zrpc.test.queued_rpc_integration trying to read up to 1662 bytes
+2024-09-18 18:04:49.523309 110 I zrpc.test.queued_rpc_integration received 1434 bytes, 2868 total
+2024-09-18 18:04:49.523310 110 I zrpc.test.queued_rpc_integration trying to read up to 228 bytes
+2024-09-18 18:04:49.523313 110 I zrpc.test.queued_rpc_integration received 228 bytes, 3096 total
+2024-09-18 18:04:49.523314 110 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:49.526083 110 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:04:49.526147 110 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:04:49.526154 110 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:04:49.526156 110 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:49.526159 110 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 9216
+2024-09-18 18:04:49.526175 110 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:04:49.526178 110 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:04:49.526179 110 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:49.526181 110 I zrpc.test.queued_rpc_integration sending rpc with buffer size 9216, mtu 9216
+2024-09-18 18:04:49.526313 110 I zrpc.test.queued_rpc_integration trying to read up to 9280 bytes
+2024-09-18 18:04:49.526320 110 I zrpc.test.queued_rpc_integration received 9150 bytes, 9150 total
+2024-09-18 18:04:49.526321 110 I zrpc.test.queued_rpc_integration trying to read up to 130 bytes
+2024-09-18 18:04:49.526324 110 I zrpc.test.queued_rpc_integration received 130 bytes, 9280 total
+2024-09-18 18:04:49.526325 110 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:49.526328 110 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:04:49.526523 110 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:04:49.526528 110 I zrpc.test.queued_rpc_integration received 9150 bytes, 9150 total
+2024-09-18 18:04:49.526529 110 I zrpc.test.queued_rpc_integration trying to read up to 9378 bytes
+2024-09-18 18:04:49.526535 110 I zrpc.test.queued_rpc_integration received 9150 bytes, 18300 total
+2024-09-18 18:04:49.526537 110 I zrpc.test.queued_rpc_integration trying to read up to 228 bytes
+2024-09-18 18:04:49.526539 110 I zrpc.test.queued_rpc_integration received 228 bytes, 18528 total
+2024-09-18 18:04:49.526540 110 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:49.527328 110 I zrpc.dpdk_tools release port 0
+2024-09-18 18:04:49.594624 110 I runtests Exiting because all tests are run
+2024-09-18 18:04:49.594658 110 I runtests Ran 1/1 tests in 167.259ms
+2024-09-18 18:04:49.594661 110 N runtests ------------------------------------------------------------
+2024-09-18 18:04:49.594662 110 N runtests Slowest running tests:
+2024-09-18 18:04:49.594664 110 N runtests 167.167ms : zrpc.queued_rpc.integration.e2e
+2024-09-18 18:04:49.594666 110 N runtests ------------------------------------------------------------
+2024-09-18 18:04:54.511786 112 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:04:56.530339 112 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:04:56.530349 112 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:04:56.530352 112 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:04:56.530354 112 I runtests [CMD] -d
+2024-09-18 18:04:56.530356 112 I runtests [CMD] zrpc.queued_rpc.integration.e2e.dma
+2024-09-18 18:04:56.530364 112 N runtests Running with 4 junction threads
+2024-09-18 18:04:56.533357 112 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:04:56.533392 112 I runtests Using seed 3148279903 for picking random set of tests
+2024-09-18 18:04:56.533436 112 N runtests ------------------------------------------------------------
+2024-09-18 18:04:56.533438 112 N runtests [zrpc.queued_rpc.integration.e2e.dma] begin (0)
+2024-09-18 18:04:56.533440 112 N runtests ------------------------------------------------------------
+2024-09-18 18:04:56.533557 112 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=fe80::ac12:7ff:feaa:4b17%veth1, client_port=8000, server_iface=veth2-42, server_ip=fe80::280d:8bff:fe67:8c86%veth2-42, server_port=8001, vlan=42>
+2024-09-18 18:04:56.533760 112 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=fe80::ac12:7ff:feaa:4b17:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=fe80::280d:8bff:fe67:8c86:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7f0eaf2e8000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7f0eaf227000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7f0eab227000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:04:56.544836 112 I zrpc.test.queued_rpc_integration Random seed for test is 1827648299
+2024-09-18 18:04:56.627712 112 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:04:56.627790 112 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+EAL: WARNING! Base virtual address hint (0x100017000 != 0x7f0ea81c6000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:04:56.645310 112 I zrpc.dpdk_tools ir_dpdk_heap-1: External memory heap <VA=[0x7f0ea8227000, 0x7f0eaa227000)> usable <VA=[0x7f0ea83c0980, 0x7f0eaa226fe6)>
+2024-09-18 18:04:56.645675 112 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:04:56.645738 112 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:04:56.646101 112 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:04:56.646120 112 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:04:56.646122 112 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:56.646127 112 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 1500
+2024-09-18 18:04:56.646163 112 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:04:56.646167 112 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:04:56.646169 112 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:56.646171 112 I zrpc.test.queued_rpc_integration sending rpc with buffer size 1500, mtu 1500
+2024-09-18 18:04:56.646231 112 I zrpc.test.queued_rpc_integration trying to read up to 1564 bytes
+2024-09-18 18:04:56.646234 112 I zrpc.test.queued_rpc_integration received 1434 bytes, 1434 total
+2024-09-18 18:04:56.646236 112 I zrpc.test.queued_rpc_integration trying to read up to 130 bytes
+2024-09-18 18:04:56.646239 112 I zrpc.test.queued_rpc_integration received 130 bytes, 1564 total
+2024-09-18 18:04:56.646240 112 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:56.646242 112 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:04:56.646306 112 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:04:56.646310 112 I zrpc.test.queued_rpc_integration received 1434 bytes, 1434 total
+2024-09-18 18:04:56.646319 112 I zrpc.test.queued_rpc_integration trying to read up to 1662 bytes
+2024-09-18 18:04:56.646321 112 I zrpc.test.queued_rpc_integration received 1434 bytes, 2868 total
+2024-09-18 18:04:56.646323 112 I zrpc.test.queued_rpc_integration trying to read up to 228 bytes
+2024-09-18 18:04:56.646325 112 I zrpc.test.queued_rpc_integration received 228 bytes, 3096 total
+2024-09-18 18:04:56.646327 112 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:56.648919 112 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:04:56.649025 112 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-1
+EAL: WARNING! Base virtual address hint (0x10001d000 != 0x7f0ea81c6000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:04:56.667381 112 I zrpc.dpdk_tools ir_dpdk_heap-2: External memory heap <VA=[0x7f0ea8227000, 0x7f0eaa227000)> usable <VA=[0x7f0ea83c0980, 0x7f0eaa226fe6)>
+2024-09-18 18:04:56.667550 112 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:04:56.667588 112 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:04:56.667848 112 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:04:56.667861 112 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:04:56.667863 112 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:56.667867 112 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 9216
+2024-09-18 18:04:56.667895 112 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:04:56.667898 112 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:04:56.667899 112 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:56.667902 112 I zrpc.test.queued_rpc_integration sending rpc with buffer size 9216, mtu 9216
+2024-09-18 18:04:56.668046 112 I zrpc.test.queued_rpc_integration trying to read up to 9280 bytes
+2024-09-18 18:04:56.668052 112 I zrpc.test.queued_rpc_integration received 9150 bytes, 9150 total
+2024-09-18 18:04:56.668054 112 I zrpc.test.queued_rpc_integration trying to read up to 130 bytes
+2024-09-18 18:04:56.668056 112 I zrpc.test.queued_rpc_integration received 130 bytes, 9280 total
+2024-09-18 18:04:56.668058 112 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:56.668060 112 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:04:56.668268 112 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:04:56.668274 112 I zrpc.test.queued_rpc_integration received 9150 bytes, 9150 total
+2024-09-18 18:04:56.668275 112 I zrpc.test.queued_rpc_integration trying to read up to 9378 bytes
+2024-09-18 18:04:56.668281 112 I zrpc.test.queued_rpc_integration received 9150 bytes, 18300 total
+2024-09-18 18:04:56.668282 112 I zrpc.test.queued_rpc_integration trying to read up to 228 bytes
+2024-09-18 18:04:56.668284 112 I zrpc.test.queued_rpc_integration received 228 bytes, 18528 total
+2024-09-18 18:04:56.668286 112 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:04:56.669514 112 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:04:56.669591 112 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-2
+2024-09-18 18:04:56.673510 112 I zrpc.dpdk_tools release port 0
+2024-09-18 18:04:56.734521 112 I runtests Exiting because all tests are run
+2024-09-18 18:04:56.734546 112 I runtests Ran 1/1 tests in 201.185ms
+2024-09-18 18:04:56.734548 112 N runtests ------------------------------------------------------------
+2024-09-18 18:04:56.734550 112 N runtests Slowest running tests:
+2024-09-18 18:04:56.734552 112 N runtests 201.079ms : zrpc.queued_rpc.integration.e2e.dma
+2024-09-18 18:04:56.734554 112 N runtests ------------------------------------------------------------
+2024-09-18 18:05:04.857744 115 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:07.360306 115 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:05:07.360317 115 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:07.360320 115 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:05:07.360322 115 I runtests [CMD] -d
+2024-09-18 18:05:07.360324 115 I runtests [CMD] zrpc.queued_rpc.integration.e2e
+2024-09-18 18:05:07.360332 115 N runtests Running with 4 junction threads
+2024-09-18 18:05:07.362085 115 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:05:07.362111 115 I runtests Using seed 1706428131 for picking random set of tests
+2024-09-18 18:05:07.362157 115 N runtests ------------------------------------------------------------
+2024-09-18 18:05:07.362160 115 N runtests [zrpc.queued_rpc.integration.e2e] begin (0)
+2024-09-18 18:05:07.362161 115 N runtests ------------------------------------------------------------
+2024-09-18 18:05:07.367829 115 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=172.16.0.1, client_port=8000, server_iface=veth2, server_ip=172.16.0.2, server_port=8001, vlan=0>
+2024-09-18 18:05:07.368014 115 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=nullopt, inet=172.16.0.1:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=nullopt, inet=172.16.0.2:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7f037ec18000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7f037eb57000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7f037ab57000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:07.379140 115 I zrpc.test.queued_rpc_integration Random seed for test is 2449554961
+2024-09-18 18:05:07.491657 115 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:05:07.491719 115 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+2024-09-18 18:05:07.494910 115 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:05:07.495005 115 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:07.495017 115 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:05:07.495019 115 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:07.495024 115 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 1500
+2024-09-18 18:05:07.495042 115 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:05:07.495046 115 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:05:07.495048 115 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:07.495051 115 I zrpc.test.queued_rpc_integration sending rpc with buffer size 1500, mtu 1500
+2024-09-18 18:05:07.495089 115 I zrpc.test.queued_rpc_integration trying to read up to 1564 bytes
+2024-09-18 18:05:07.495093 115 I zrpc.test.queued_rpc_integration received 1458 bytes, 1458 total
+2024-09-18 18:05:07.495094 115 I zrpc.test.queued_rpc_integration trying to read up to 106 bytes
+2024-09-18 18:05:07.495097 115 I zrpc.test.queued_rpc_integration received 106 bytes, 1564 total
+2024-09-18 18:05:07.495099 115 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:07.495101 115 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:05:07.495150 115 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:07.495153 115 I zrpc.test.queued_rpc_integration received 1458 bytes, 1458 total
+2024-09-18 18:05:07.495165 115 I zrpc.test.queued_rpc_integration trying to read up to 1638 bytes
+2024-09-18 18:05:07.495167 115 I zrpc.test.queued_rpc_integration received 1458 bytes, 2916 total
+2024-09-18 18:05:07.495169 115 I zrpc.test.queued_rpc_integration trying to read up to 180 bytes
+2024-09-18 18:05:07.495171 115 I zrpc.test.queued_rpc_integration received 180 bytes, 3096 total
+2024-09-18 18:05:07.495172 115 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:07.497805 115 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:05:07.497856 115 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:07.497862 115 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:05:07.497864 115 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:07.497867 115 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 9216
+2024-09-18 18:05:07.497879 115 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:05:07.497882 115 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:05:07.497883 115 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:07.497885 115 I zrpc.test.queued_rpc_integration sending rpc with buffer size 9216, mtu 9216
+2024-09-18 18:05:07.498014 115 I zrpc.test.queued_rpc_integration trying to read up to 9280 bytes
+2024-09-18 18:05:07.498020 115 I zrpc.test.queued_rpc_integration received 9174 bytes, 9174 total
+2024-09-18 18:05:07.498021 115 I zrpc.test.queued_rpc_integration trying to read up to 106 bytes
+2024-09-18 18:05:07.498024 115 I zrpc.test.queued_rpc_integration received 106 bytes, 9280 total
+2024-09-18 18:05:07.498025 115 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:07.498028 115 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:05:07.498215 115 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:07.498221 115 I zrpc.test.queued_rpc_integration received 9174 bytes, 9174 total
+2024-09-18 18:05:07.498222 115 I zrpc.test.queued_rpc_integration trying to read up to 9354 bytes
+2024-09-18 18:05:07.498228 115 I zrpc.test.queued_rpc_integration received 9174 bytes, 18348 total
+2024-09-18 18:05:07.498229 115 I zrpc.test.queued_rpc_integration trying to read up to 180 bytes
+2024-09-18 18:05:07.498232 115 I zrpc.test.queued_rpc_integration received 180 bytes, 18528 total
+2024-09-18 18:05:07.498233 115 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:07.498841 115 I zrpc.dpdk_tools release port 0
+2024-09-18 18:05:07.558646 115 I runtests Exiting because all tests are run
+2024-09-18 18:05:07.558677 115 I runtests Ran 1/1 tests in 196.587ms
+2024-09-18 18:05:07.558680 115 N runtests ------------------------------------------------------------
+2024-09-18 18:05:07.558681 115 N runtests Slowest running tests:
+2024-09-18 18:05:07.558683 115 N runtests 196.478ms : zrpc.queued_rpc.integration.e2e
+2024-09-18 18:05:07.558685 115 N runtests ------------------------------------------------------------
+2024-09-18 18:05:13.951549 117 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:13.951587 117 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:05:13.951589 117 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:13.951591 117 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:05:13.951593 117 I runtests [CMD] -d
+2024-09-18 18:05:13.951594 117 I runtests [CMD] zrpc.queued_rpc.integration.e2e.dma
+2024-09-18 18:05:13.951598 117 N runtests Running with 4 junction threads
+2024-09-18 18:05:13.953172 117 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:05:13.953196 117 I runtests Using seed 3479586591 for picking random set of tests
+2024-09-18 18:05:13.953232 117 N runtests ------------------------------------------------------------
+2024-09-18 18:05:13.953244 117 N runtests [zrpc.queued_rpc.integration.e2e.dma] begin (0)
+2024-09-18 18:05:13.953246 117 N runtests ------------------------------------------------------------
+2024-09-18 18:05:13.953346 117 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=172.16.0.1, client_port=8000, server_iface=veth2, server_ip=172.16.0.2, server_port=8001, vlan=0>
+2024-09-18 18:05:13.953519 117 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=nullopt, inet=172.16.0.1:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=nullopt, inet=172.16.0.2:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7fa98df71000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7fa98deb0000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7fa989eb0000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:13.964762 117 I zrpc.test.queued_rpc_integration Random seed for test is 70448359
+2024-09-18 18:05:14.055670 117 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:05:14.055740 117 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+EAL: WARNING! Base virtual address hint (0x100017000 != 0x7fa986e4f000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:14.074167 117 I zrpc.dpdk_tools ir_dpdk_heap-1: External memory heap <VA=[0x7fa986eb0000, 0x7fa988eb0000)> usable <VA=[0x7fa987049980, 0x7fa988eaffe6)>
+2024-09-18 18:05:14.074544 117 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:05:14.074610 117 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:05:14.075010 117 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:14.075028 117 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:05:14.075030 117 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:14.075036 117 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 1500
+2024-09-18 18:05:14.075073 117 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:05:14.075077 117 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:05:14.075078 117 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:14.075080 117 I zrpc.test.queued_rpc_integration sending rpc with buffer size 1500, mtu 1500
+2024-09-18 18:05:14.075141 117 I zrpc.test.queued_rpc_integration trying to read up to 1564 bytes
+2024-09-18 18:05:14.075146 117 I zrpc.test.queued_rpc_integration received 1458 bytes, 1458 total
+2024-09-18 18:05:14.075147 117 I zrpc.test.queued_rpc_integration trying to read up to 106 bytes
+2024-09-18 18:05:14.075150 117 I zrpc.test.queued_rpc_integration received 106 bytes, 1564 total
+2024-09-18 18:05:14.075152 117 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:14.075154 117 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:05:14.075224 117 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:14.075227 117 I zrpc.test.queued_rpc_integration received 1458 bytes, 1458 total
+2024-09-18 18:05:14.075229 117 I zrpc.test.queued_rpc_integration trying to read up to 1638 bytes
+2024-09-18 18:05:14.075231 117 I zrpc.test.queued_rpc_integration received 1458 bytes, 2916 total
+2024-09-18 18:05:14.075233 117 I zrpc.test.queued_rpc_integration trying to read up to 180 bytes
+2024-09-18 18:05:14.075236 117 I zrpc.test.queued_rpc_integration received 180 bytes, 3096 total
+2024-09-18 18:05:14.075246 117 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:14.078077 117 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:05:14.078206 117 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-1
+EAL: WARNING! Base virtual address hint (0x10001d000 != 0x7fa986e4f000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:14.097971 117 I zrpc.dpdk_tools ir_dpdk_heap-2: External memory heap <VA=[0x7fa986eb0000, 0x7fa988eb0000)> usable <VA=[0x7fa987049980, 0x7fa988eaffe6)>
+2024-09-18 18:05:14.098158 117 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:05:14.098200 117 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:05:14.098547 117 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:14.098563 117 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:05:14.098565 117 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:14.098569 117 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 9216
+2024-09-18 18:05:14.098600 117 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:05:14.098603 117 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:05:14.098604 117 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:14.098607 117 I zrpc.test.queued_rpc_integration sending rpc with buffer size 9216, mtu 9216
+2024-09-18 18:05:14.098776 117 I zrpc.test.queued_rpc_integration trying to read up to 9280 bytes
+2024-09-18 18:05:14.098787 117 I zrpc.test.queued_rpc_integration received 9174 bytes, 9174 total
+2024-09-18 18:05:14.098789 117 I zrpc.test.queued_rpc_integration trying to read up to 106 bytes
+2024-09-18 18:05:14.098792 117 I zrpc.test.queued_rpc_integration received 106 bytes, 9280 total
+2024-09-18 18:05:14.098793 117 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:14.098796 117 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:05:14.099009 117 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:14.099016 117 I zrpc.test.queued_rpc_integration received 9174 bytes, 9174 total
+2024-09-18 18:05:14.099017 117 I zrpc.test.queued_rpc_integration trying to read up to 9354 bytes
+2024-09-18 18:05:14.099023 117 I zrpc.test.queued_rpc_integration received 9174 bytes, 18348 total
+2024-09-18 18:05:14.099025 117 I zrpc.test.queued_rpc_integration trying to read up to 180 bytes
+2024-09-18 18:05:14.099027 117 I zrpc.test.queued_rpc_integration received 180 bytes, 18528 total
+2024-09-18 18:05:14.099028 117 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:14.100461 117 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:05:14.100557 117 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-2
+2024-09-18 18:05:14.105081 117 I zrpc.dpdk_tools release port 0
+2024-09-18 18:05:14.188209 117 I runtests Exiting because all tests are run
+2024-09-18 18:05:14.188263 117 I runtests Ran 1/1 tests in 235.086ms
+2024-09-18 18:05:14.188267 117 N runtests ------------------------------------------------------------
+2024-09-18 18:05:14.188268 117 N runtests Slowest running tests:
+2024-09-18 18:05:14.188271 117 N runtests 234.967ms : zrpc.queued_rpc.integration.e2e.dma
+2024-09-18 18:05:14.188273 117 N runtests ------------------------------------------------------------
+2024-09-18 18:05:27.227534 120 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:27.227568 120 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:05:27.227571 120 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:27.227573 120 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:05:27.227583 120 I runtests [CMD] -d
+2024-09-18 18:05:27.227585 120 I runtests [CMD] zrpc.queued_rpc.integration.e2e
+2024-09-18 18:05:27.227589 120 N runtests Running with 4 junction threads
+2024-09-18 18:05:27.229100 120 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:05:27.229122 120 I runtests Using seed 3276880055 for picking random set of tests
+2024-09-18 18:05:27.229161 120 N runtests ------------------------------------------------------------
+2024-09-18 18:05:27.229164 120 N runtests [zrpc.queued_rpc.integration.e2e] begin (0)
+2024-09-18 18:05:27.229165 120 N runtests ------------------------------------------------------------
+2024-09-18 18:05:27.229267 120 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=172.16.1.1, client_port=8000, server_iface=veth2-42, server_ip=172.16.1.2, server_port=8001, vlan=42>
+2024-09-18 18:05:27.229445 120 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=172.16.1.1:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=172.16.1.2:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7fcc62dd2000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7fcc62d11000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7fcc5ed11000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:27.240608 120 I zrpc.test.queued_rpc_integration Random seed for test is 1691804021
+2024-09-18 18:05:27.323651 120 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:05:27.323715 120 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+2024-09-18 18:05:27.326945 120 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:05:27.327038 120 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:27.327049 120 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:05:27.327051 120 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:27.327056 120 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 1500
+2024-09-18 18:05:27.327074 120 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:05:27.327078 120 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:05:27.327079 120 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:27.327081 120 I zrpc.test.queued_rpc_integration sending rpc with buffer size 1500, mtu 1500
+2024-09-18 18:05:27.327119 120 I zrpc.test.queued_rpc_integration trying to read up to 1564 bytes
+2024-09-18 18:05:27.327122 120 I zrpc.test.queued_rpc_integration received 1454 bytes, 1454 total
+2024-09-18 18:05:27.327124 120 I zrpc.test.queued_rpc_integration trying to read up to 110 bytes
+2024-09-18 18:05:27.327126 120 I zrpc.test.queued_rpc_integration received 110 bytes, 1564 total
+2024-09-18 18:05:27.327128 120 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:27.327130 120 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:05:27.327181 120 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:27.327184 120 I zrpc.test.queued_rpc_integration received 1454 bytes, 1454 total
+2024-09-18 18:05:27.327185 120 I zrpc.test.queued_rpc_integration trying to read up to 1642 bytes
+2024-09-18 18:05:27.327188 120 I zrpc.test.queued_rpc_integration received 1454 bytes, 2908 total
+2024-09-18 18:05:27.327199 120 I zrpc.test.queued_rpc_integration trying to read up to 188 bytes
+2024-09-18 18:05:27.327201 120 I zrpc.test.queued_rpc_integration received 188 bytes, 3096 total
+2024-09-18 18:05:27.327202 120 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:27.329879 120 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:05:27.329936 120 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:27.329944 120 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:05:27.329946 120 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:27.329948 120 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 9216
+2024-09-18 18:05:27.329964 120 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:05:27.329967 120 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:05:27.329969 120 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:27.329970 120 I zrpc.test.queued_rpc_integration sending rpc with buffer size 9216, mtu 9216
+2024-09-18 18:05:27.330099 120 I zrpc.test.queued_rpc_integration trying to read up to 9280 bytes
+2024-09-18 18:05:27.330106 120 I zrpc.test.queued_rpc_integration received 9170 bytes, 9170 total
+2024-09-18 18:05:27.330107 120 I zrpc.test.queued_rpc_integration trying to read up to 110 bytes
+2024-09-18 18:05:27.330110 120 I zrpc.test.queued_rpc_integration received 110 bytes, 9280 total
+2024-09-18 18:05:27.330111 120 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:27.330114 120 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:05:27.330304 120 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:27.330309 120 I zrpc.test.queued_rpc_integration received 9170 bytes, 9170 total
+2024-09-18 18:05:27.330311 120 I zrpc.test.queued_rpc_integration trying to read up to 9358 bytes
+2024-09-18 18:05:27.330317 120 I zrpc.test.queued_rpc_integration received 9170 bytes, 18340 total
+2024-09-18 18:05:27.330319 120 I zrpc.test.queued_rpc_integration trying to read up to 188 bytes
+2024-09-18 18:05:27.330321 120 I zrpc.test.queued_rpc_integration received 188 bytes, 18528 total
+2024-09-18 18:05:27.330322 120 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:27.331010 120 I zrpc.dpdk_tools release port 0
+2024-09-18 18:05:27.394523 120 I runtests Exiting because all tests are run
+2024-09-18 18:05:27.394547 120 I runtests Ran 1/1 tests in 165.443ms
+2024-09-18 18:05:27.394551 120 N runtests ------------------------------------------------------------
+2024-09-18 18:05:27.394552 120 N runtests Slowest running tests:
+2024-09-18 18:05:27.394555 120 N runtests 165.350ms : zrpc.queued_rpc.integration.e2e
+2024-09-18 18:05:27.394557 120 N runtests ------------------------------------------------------------
+2024-09-18 18:05:32.243004 122 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:32.243037 122 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:05:32.243039 122 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:32.243041 122 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:05:32.243043 122 I runtests [CMD] -d
+2024-09-18 18:05:32.243044 122 I runtests [CMD] zrpc.queued_rpc.integration.e2e.dma
+2024-09-18 18:05:32.243048 122 N runtests Running with 4 junction threads
+2024-09-18 18:05:32.244550 122 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:05:32.244572 122 I runtests Using seed 1219082401 for picking random set of tests
+2024-09-18 18:05:32.244611 122 N runtests ------------------------------------------------------------
+2024-09-18 18:05:32.244614 122 N runtests [zrpc.queued_rpc.integration.e2e.dma] begin (0)
+2024-09-18 18:05:32.244615 122 N runtests ------------------------------------------------------------
+2024-09-18 18:05:32.244726 122 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=172.16.1.1, client_port=8000, server_iface=veth2-42, server_ip=172.16.1.2, server_port=8001, vlan=42>
+2024-09-18 18:05:32.244906 122 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=172.16.1.1:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=172.16.1.2:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7fdb60abe000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7fdb609fd000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7fdb5c9fd000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:32.255866 122 I zrpc.test.queued_rpc_integration Random seed for test is 1735413189
+2024-09-18 18:05:32.367651 122 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:05:32.367714 122 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+EAL: WARNING! Base virtual address hint (0x100017000 != 0x7fdb5999c000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:32.385305 122 I zrpc.dpdk_tools ir_dpdk_heap-1: External memory heap <VA=[0x7fdb599fd000, 0x7fdb5b9fd000)> usable <VA=[0x7fdb59b96980, 0x7fdb5b9fcfe6)>
+2024-09-18 18:05:32.385654 122 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:05:32.385719 122 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:05:32.386096 122 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:32.386115 122 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:05:32.386117 122 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:32.386123 122 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 1500
+2024-09-18 18:05:32.386158 122 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:05:32.386162 122 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:05:32.386163 122 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:32.386166 122 I zrpc.test.queued_rpc_integration sending rpc with buffer size 1500, mtu 1500
+2024-09-18 18:05:32.386226 122 I zrpc.test.queued_rpc_integration trying to read up to 1564 bytes
+2024-09-18 18:05:32.386230 122 I zrpc.test.queued_rpc_integration received 1454 bytes, 1454 total
+2024-09-18 18:05:32.386232 122 I zrpc.test.queued_rpc_integration trying to read up to 110 bytes
+2024-09-18 18:05:32.386234 122 I zrpc.test.queued_rpc_integration received 110 bytes, 1564 total
+2024-09-18 18:05:32.386236 122 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:32.386238 122 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:05:32.386301 122 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:32.386305 122 I zrpc.test.queued_rpc_integration received 1454 bytes, 1454 total
+2024-09-18 18:05:32.386306 122 I zrpc.test.queued_rpc_integration trying to read up to 1642 bytes
+2024-09-18 18:05:32.386309 122 I zrpc.test.queued_rpc_integration received 1454 bytes, 2908 total
+2024-09-18 18:05:32.386310 122 I zrpc.test.queued_rpc_integration trying to read up to 188 bytes
+2024-09-18 18:05:32.386313 122 I zrpc.test.queued_rpc_integration received 188 bytes, 3096 total
+2024-09-18 18:05:32.386323 122 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:32.388971 122 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:05:32.389083 122 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-1
+EAL: WARNING! Base virtual address hint (0x10001d000 != 0x7fdb5999c000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:32.407580 122 I zrpc.dpdk_tools ir_dpdk_heap-2: External memory heap <VA=[0x7fdb599fd000, 0x7fdb5b9fd000)> usable <VA=[0x7fdb59b96980, 0x7fdb5b9fcfe6)>
+2024-09-18 18:05:32.407750 122 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:05:32.407796 122 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:05:32.408104 122 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:32.408119 122 I zrpc.test.queued_rpc_integration received 32 bytes, 32 total
+2024-09-18 18:05:32.408121 122 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:32.408126 122 I zrpc.test.queued_rpc_integration sending rpc with buffer size 100, mtu 9216
+2024-09-18 18:05:32.408151 122 I zrpc.test.queued_rpc_integration trying to read up to 132 bytes
+2024-09-18 18:05:32.408155 122 I zrpc.test.queued_rpc_integration received 132 bytes, 132 total
+2024-09-18 18:05:32.408156 122 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:32.408159 122 I zrpc.test.queued_rpc_integration sending rpc with buffer size 9216, mtu 9216
+2024-09-18 18:05:32.408310 122 I zrpc.test.queued_rpc_integration trying to read up to 9280 bytes
+2024-09-18 18:05:32.408316 122 I zrpc.test.queued_rpc_integration received 9170 bytes, 9170 total
+2024-09-18 18:05:32.408318 122 I zrpc.test.queued_rpc_integration trying to read up to 110 bytes
+2024-09-18 18:05:32.408320 122 I zrpc.test.queued_rpc_integration received 110 bytes, 9280 total
+2024-09-18 18:05:32.408322 122 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:32.408324 122 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:05:32.408535 122 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:32.408542 122 I zrpc.test.queued_rpc_integration received 9170 bytes, 9170 total
+2024-09-18 18:05:32.408543 122 I zrpc.test.queued_rpc_integration trying to read up to 9358 bytes
+2024-09-18 18:05:32.408549 122 I zrpc.test.queued_rpc_integration received 9170 bytes, 18340 total
+2024-09-18 18:05:32.408550 122 I zrpc.test.queued_rpc_integration trying to read up to 188 bytes
+2024-09-18 18:05:32.408553 122 I zrpc.test.queued_rpc_integration received 188 bytes, 18528 total
+2024-09-18 18:05:32.408554 122 I zrpc.test.queued_rpc_integration success!
+2024-09-18 18:05:32.409853 122 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:05:32.409936 122 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-2
+2024-09-18 18:05:32.414011 122 I zrpc.dpdk_tools release port 0
+2024-09-18 18:05:32.462519 122 I runtests Exiting because all tests are run
+2024-09-18 18:05:32.462542 122 I runtests Ran 1/1 tests in 217.987ms
+2024-09-18 18:05:32.462545 122 N runtests ------------------------------------------------------------
+2024-09-18 18:05:32.462546 122 N runtests Slowest running tests:
+2024-09-18 18:05:32.462548 122 N runtests 217.903ms : zrpc.queued_rpc.integration.e2e.dma
+2024-09-18 18:05:32.462550 122 N runtests ------------------------------------------------------------
+2024-09-18 18:05:40.327417 125 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:40.327459 125 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:05:40.327462 125 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:40.327464 125 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:05:40.327476 125 I runtests [CMD] -d
+2024-09-18 18:05:40.327478 125 I runtests [CMD] zrpc.queued_rpc.integration.e2e_xfail
+2024-09-18 18:05:40.327482 125 N runtests Running with 4 junction threads
+2024-09-18 18:05:40.329160 125 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:05:40.329188 125 I runtests Using seed 701818253 for picking random set of tests
+2024-09-18 18:05:40.329236 125 N runtests ------------------------------------------------------------
+2024-09-18 18:05:40.329239 125 N runtests [zrpc.queued_rpc.integration.e2e_xfail] begin (0)
+2024-09-18 18:05:40.329241 125 N runtests ------------------------------------------------------------
+2024-09-18 18:05:40.329353 125 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=172.16.0.1, client_port=8000, server_iface=veth2, server_ip=172.16.0.2, server_port=8001, vlan=42>
+2024-09-18 18:05:40.329528 125 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=172.16.0.1:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=172.16.0.2:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7f8b2635e000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7f8b2629d000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7f8b2229d000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:40.340703 125 I zrpc.test.queued_rpc_integration Random seed for test is 2215095758
+2024-09-18 18:05:40.427648 125 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:05:40.427713 125 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+2024-09-18 18:05:40.430881 125 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:05:40.430983 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.430991 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.432057 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.432060 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.434118 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.434120 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.438177 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.438180 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.446239 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.446245 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.462307 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.462315 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.494380 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.494387 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.558467 125 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:05:40.558608 125 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:40.558614 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.559673 125 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:40.559675 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.561745 125 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:40.561747 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.565806 125 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:40.565810 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.573874 125 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:40.573883 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.589952 125 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:40.589957 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.622028 125 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:40.622033 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.689256 125 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:05:40.689345 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.689352 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.690422 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.690425 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.692488 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.692492 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.696555 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.696559 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.704628 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.704631 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.720702 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.720706 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.752785 125 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:40.752790 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.816865 125 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:05:40.817149 125 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:40.817154 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.818214 125 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:40.818217 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.820276 125 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:40.820280 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.824340 125 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:40.824344 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.832405 125 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:40.832410 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.848478 125 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:40.848482 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.880550 125 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:40.880558 125 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:40.945855 125 I zrpc.dpdk_tools release port 0
+2024-09-18 18:05:41.022734 125 I runtests Exiting because all tests are run
+2024-09-18 18:05:41.022776 125 I runtests Ran 1/1 tests in 693.604ms
+2024-09-18 18:05:41.022780 125 N runtests ------------------------------------------------------------
+2024-09-18 18:05:41.022793 125 N runtests Slowest running tests:
+2024-09-18 18:05:41.022796 125 N runtests 693.491ms : zrpc.queued_rpc.integration.e2e_xfail
+2024-09-18 18:05:41.022797 125 N runtests ------------------------------------------------------------
+2024-09-18 18:05:43.389845 127 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:43.389878 127 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:05:43.389881 127 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:43.389882 127 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:05:43.389884 127 I runtests [CMD] -d
+2024-09-18 18:05:43.389886 127 I runtests [CMD] zrpc.queued_rpc.integration.e2e_xfail.dma
+2024-09-18 18:05:43.389890 127 N runtests Running with 4 junction threads
+2024-09-18 18:05:43.391473 127 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:05:43.391523 127 I runtests Using seed 564074958 for picking random set of tests
+2024-09-18 18:05:43.391561 127 N runtests ------------------------------------------------------------
+2024-09-18 18:05:43.391564 127 N runtests [zrpc.queued_rpc.integration.e2e_xfail.dma] begin (0)
+2024-09-18 18:05:43.391565 127 N runtests ------------------------------------------------------------
+2024-09-18 18:05:43.391672 127 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=172.16.0.1, client_port=8000, server_iface=veth2, server_ip=172.16.0.2, server_port=8001, vlan=42>
+2024-09-18 18:05:43.391858 127 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=172.16.0.1:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=172.16.0.2:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7fee131d8000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7fee13117000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7fee0f117000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:43.402963 127 I zrpc.test.queued_rpc_integration Random seed for test is 2822177666
+2024-09-18 18:05:43.479897 127 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:05:43.479963 127 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+EAL: WARNING! Base virtual address hint (0x100017000 != 0x7fee0c0b6000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:43.497585 127 I zrpc.dpdk_tools ir_dpdk_heap-1: External memory heap <VA=[0x7fee0c117000, 0x7fee0e117000)> usable <VA=[0x7fee0c2b0980, 0x7fee0e116fe6)>
+2024-09-18 18:05:43.497959 127 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:05:43.498025 127 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:05:43.498394 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.498407 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.499480 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.499483 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.501542 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.501545 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.505617 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.505622 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.513682 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.513687 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.529747 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.529753 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.561819 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.561829 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.625903 127 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:05:43.626073 127 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:43.626078 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.627140 127 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:43.627143 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.629201 127 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:43.629204 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.633265 127 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:43.633270 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.641337 127 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:43.641341 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.657408 127 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:43.657411 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.689483 127 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:43.689488 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.756295 127 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:05:43.756437 127 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-1
+EAL: WARNING! Base virtual address hint (0x10001d000 != 0x7fee0c0b6000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:43.775120 127 I zrpc.dpdk_tools ir_dpdk_heap-2: External memory heap <VA=[0x7fee0c117000, 0x7fee0e117000)> usable <VA=[0x7fee0c2b0980, 0x7fee0e116fe6)>
+2024-09-18 18:05:43.775287 127 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:05:43.775332 127 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:05:43.775664 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.775676 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.776741 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.776744 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.778802 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.778806 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.782866 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.782874 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.790935 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.790945 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.807012 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.807019 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.839100 127 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:43.839107 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.903177 127 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:05:43.903464 127 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:43.903469 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.904528 127 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:43.904531 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.906591 127 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:43.906595 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.910657 127 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:43.910663 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.918721 127 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:43.918726 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.934793 127 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:43.934800 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:43.966877 127 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:43.966899 127 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:44.032477 127 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:05:44.032579 127 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-2
+2024-09-18 18:05:44.036947 127 I zrpc.dpdk_tools release port 0
+2024-09-18 18:05:44.114580 127 I runtests Exiting because all tests are run
+2024-09-18 18:05:44.114609 127 I runtests Ran 1/1 tests in 723.130ms
+2024-09-18 18:05:44.114611 127 N runtests ------------------------------------------------------------
+2024-09-18 18:05:44.114613 127 N runtests Slowest running tests:
+2024-09-18 18:05:44.114615 127 N runtests 723.007ms : zrpc.queued_rpc.integration.e2e_xfail.dma
+2024-09-18 18:05:44.114617 127 N runtests ------------------------------------------------------------
+2024-09-18 18:05:49.891181 130 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:49.891215 130 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:05:49.891218 130 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:05:49.891220 130 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:05:49.891222 130 I runtests [CMD] -d
+2024-09-18 18:05:49.891223 130 I runtests [CMD] zrpc.queued_rpc.integration.e2e_xfail
+2024-09-18 18:05:49.891227 130 N runtests Running with 4 junction threads
+2024-09-18 18:05:49.892803 130 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:05:49.892828 130 I runtests Using seed 3087183659 for picking random set of tests
+2024-09-18 18:05:49.892875 130 N runtests ------------------------------------------------------------
+2024-09-18 18:05:49.892878 130 N runtests [zrpc.queued_rpc.integration.e2e_xfail] begin (0)
+2024-09-18 18:05:49.892879 130 N runtests ------------------------------------------------------------
+2024-09-18 18:05:49.892982 130 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=172.16.1.1, client_port=8000, server_iface=veth2-42, server_ip=172.16.1.2, server_port=8001, vlan=0>
+2024-09-18 18:05:49.893146 130 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=nullopt, inet=172.16.1.1:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=nullopt, inet=172.16.1.2:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7fa37349d000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7fa3733dc000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7fa36f3dc000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:05:49.904098 130 I zrpc.test.queued_rpc_integration Random seed for test is 4219672689
+2024-09-18 18:05:50.019659 130 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:05:50.019730 130 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+2024-09-18 18:05:50.023013 130 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:05:50.023146 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.023158 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.024224 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.024228 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.026288 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.026291 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.030355 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.030362 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.038427 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.038433 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.054500 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.054506 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.086577 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.086584 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.150652 130 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:05:50.150751 130 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:50.150754 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.151812 130 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:50.151815 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.153874 130 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:50.153877 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.157939 130 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:50.157943 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.166002 130 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:50.166007 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.182071 130 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:50.182078 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.214142 130 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:05:50.214148 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.281286 130 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:05:50.281379 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.281386 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.282454 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.282469 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.284528 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.284533 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.288593 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.288597 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.296655 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.296660 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.312726 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.312733 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.344802 130 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:05:50.344809 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.408880 130 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:05:50.409149 130 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:50.409153 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.410216 130 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:50.410218 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.412278 130 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:50.412281 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.416341 130 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:50.416344 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.424404 130 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:50.424410 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.440487 130 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:50.440512 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.472572 130 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:05:50.472583 130 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:05:50.537896 130 I zrpc.dpdk_tools release port 0
+2024-09-18 18:05:50.594508 130 I runtests Exiting because all tests are run
+2024-09-18 18:05:50.594535 130 I runtests Ran 1/1 tests in 701.727ms
+2024-09-18 18:05:50.594538 130 N runtests ------------------------------------------------------------
+2024-09-18 18:05:50.594540 130 N runtests Slowest running tests:
+2024-09-18 18:05:50.594542 130 N runtests 701.627ms : zrpc.queued_rpc.integration.e2e_xfail
+2024-09-18 18:05:50.594544 130 N runtests ------------------------------------------------------------
+2024-09-18 18:06:05.364669 132 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:06:05.364695 132 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:06:05.364697 132 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:06:05.364699 132 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:06:05.364701 132 I runtests [CMD] -d
+2024-09-18 18:06:05.364702 132 I runtests [CMD] zrpc.queued_rpc.integration.e2e_xfail.dma
+2024-09-18 18:06:05.364706 132 N runtests Running with 4 junction threads
+2024-09-18 18:06:05.366126 132 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:06:05.366145 132 I runtests Using seed 3938523706 for picking random set of tests
+2024-09-18 18:06:05.366184 132 N runtests ------------------------------------------------------------
+2024-09-18 18:06:05.366187 132 N runtests [zrpc.queued_rpc.integration.e2e_xfail.dma] begin (0)
+2024-09-18 18:06:05.366199 132 N runtests ------------------------------------------------------------
+2024-09-18 18:06:05.366290 132 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=172.16.1.1, client_port=8000, server_iface=veth2-42, server_ip=172.16.1.2, server_port=8001, vlan=0>
+2024-09-18 18:06:05.366444 132 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=nullopt, inet=172.16.1.1:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=nullopt, inet=172.16.1.2:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7f7d49f3a000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7f7d49e79000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7f7d45e79000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:06:05.377303 132 I zrpc.test.queued_rpc_integration Random seed for test is 3625365174
+2024-09-18 18:06:05.451716 132 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:06:05.451795 132 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+EAL: WARNING! Base virtual address hint (0x100017000 != 0x7f7d42e18000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:06:05.469564 132 I zrpc.dpdk_tools ir_dpdk_heap-1: External memory heap <VA=[0x7f7d42e79000, 0x7f7d44e79000)> usable <VA=[0x7f7d43012980, 0x7f7d44e78fe6)>
+2024-09-18 18:06:05.469950 132 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:06:05.470026 132 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:06:05.470452 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.470467 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.471524 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.471529 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.473590 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.473594 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.477661 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.477667 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.485727 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.485732 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.501799 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.501804 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.533884 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.533914 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.597987 132 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:06:05.598202 132 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:05.598207 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.599271 132 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:05.599273 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.601332 132 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:05.601336 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.605409 132 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:05.605413 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.613480 132 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:05.613483 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.629553 132 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:05.629557 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.661631 132 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:05.661636 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.728321 132 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:06:05.728452 132 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-1
+EAL: WARNING! Base virtual address hint (0x10001d000 != 0x7f7d42e18000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:06:05.746839 132 I zrpc.dpdk_tools ir_dpdk_heap-2: External memory heap <VA=[0x7f7d42e79000, 0x7f7d44e79000)> usable <VA=[0x7f7d43012980, 0x7f7d44e78fe6)>
+2024-09-18 18:06:05.747009 132 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:06:05.747050 132 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:06:05.747366 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.747378 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.748439 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.748442 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.750500 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.750502 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.754567 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.754570 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.762636 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.762640 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.778714 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.778738 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.810805 132 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:05.810813 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.874889 132 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:06:05.875237 132 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:05.875244 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.876305 132 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:05.876308 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.878368 132 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:05.878371 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.882431 132 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:05.882435 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.890495 132 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:05.890500 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.906563 132 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:05.906568 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:05.938640 132 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:05.938666 132 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:06.004053 132 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:06:06.004143 132 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-2
+2024-09-18 18:06:06.008303 132 I zrpc.dpdk_tools release port 0
+2024-09-18 18:06:06.074629 132 I runtests Exiting because all tests are run
+2024-09-18 18:06:06.074660 132 I runtests Ran 1/1 tests in 708.527ms
+2024-09-18 18:06:06.074662 132 N runtests ------------------------------------------------------------
+2024-09-18 18:06:06.074664 132 N runtests Slowest running tests:
+2024-09-18 18:06:06.074667 132 N runtests 708.439ms : zrpc.queued_rpc.integration.e2e_xfail.dma
+2024-09-18 18:06:06.074668 132 N runtests ------------------------------------------------------------
+2024-09-18 18:06:13.564321 135 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:06:13.564354 135 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:06:13.564357 135 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:06:13.564359 135 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:06:13.564361 135 I runtests [CMD] -d
+2024-09-18 18:06:13.564362 135 I runtests [CMD] zrpc.queued_rpc.integration.e2e_xfail
+2024-09-18 18:06:13.564366 135 N runtests Running with 4 junction threads
+2024-09-18 18:06:13.565784 135 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:06:13.565804 135 I runtests Using seed 2434483213 for picking random set of tests
+2024-09-18 18:06:13.565843 135 N runtests ------------------------------------------------------------
+2024-09-18 18:06:13.565846 135 N runtests [zrpc.queued_rpc.integration.e2e_xfail] begin (0)
+2024-09-18 18:06:13.565847 135 N runtests ------------------------------------------------------------
+2024-09-18 18:06:15.883968 135 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=fe80::ac12:7ff:feaa:4b17%veth1, client_port=8000, server_iface=veth2, server_ip=fe80::280d:8bff:fe67:8c86%veth2, server_port=8001, vlan=42>
+2024-09-18 18:06:15.884192 135 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=fe80::ac12:7ff:feaa:4b17:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=fe80::280d:8bff:fe67:8c86:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7f7cf755e000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7f7cf749d000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7f7cf349d000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:06:15.895238 135 I zrpc.test.queued_rpc_integration Random seed for test is 4118548409
+2024-09-18 18:06:15.959648 135 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:06:15.959708 135 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+2024-09-18 18:06:15.962897 135 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:06:15.963010 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:15.963020 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:15.964085 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:15.964098 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:15.966156 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:15.966158 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:15.970216 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:15.970219 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:15.978281 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:15.978287 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:15.994349 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:15.994356 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.026423 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:16.026436 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.090505 135 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:06:16.090621 135 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:16.090625 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.091684 135 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:16.091688 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.093746 135 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:16.093749 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.097808 135 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:16.097812 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.105871 135 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:16.105877 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.121937 135 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:16.121943 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.154003 135 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:16.154011 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.221108 135 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:06:16.221179 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:16.221184 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.222249 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:16.222252 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.224312 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:16.224315 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.228375 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:16.228378 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.236440 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:16.236444 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.252509 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:16.252515 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.284580 135 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:16.284584 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.348649 135 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:06:16.348901 135 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:16.348914 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.349976 135 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:16.349979 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.352039 135 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:16.352042 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.356102 135 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:16.356104 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.364165 135 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:16.364168 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.380227 135 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:16.380231 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.412292 135 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:16.412297 135 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:16.477543 135 I zrpc.dpdk_tools release port 0
+2024-09-18 18:06:16.526482 135 I runtests Exiting because all tests are run
+2024-09-18 18:06:16.526508 135 I runtests Ran 1/1 tests in 2.960s
+2024-09-18 18:06:16.526511 135 N runtests ------------------------------------------------------------
+2024-09-18 18:06:16.526513 135 N runtests Slowest running tests:
+2024-09-18 18:06:16.526515 135 N runtests 2.960s : zrpc.queued_rpc.integration.e2e_xfail
+2024-09-18 18:06:16.526517 135 N runtests ------------------------------------------------------------
+2024-09-18 18:06:27.235124 137 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:06:27.235156 137 N runtests Starting runtests (ASAN build "5ff0282b", elasticity "4.5.99", user_email )
+2024-09-18 18:06:27.235158 137 N runtests --------------------------------------------------------------------------------------------------
+2024-09-18 18:06:27.235160 137 I runtests [CMD] /home/ir/iridium/asan-install/opt/ir/binA/runtestsA
+2024-09-18 18:06:27.235162 137 I runtests [CMD] -d
+2024-09-18 18:06:27.235164 137 I runtests [CMD] zrpc.queued_rpc.integration.e2e_xfail.dma
+2024-09-18 18:06:27.235168 137 N runtests Running with 4 junction threads
+2024-09-18 18:06:27.236758 137 N runtests Non-fuzz build, will run through existing corpora only
+2024-09-18 18:06:27.236781 137 I runtests Using seed 466268452 for picking random set of tests
+2024-09-18 18:06:27.236822 137 N runtests ------------------------------------------------------------
+2024-09-18 18:06:27.236826 137 N runtests [zrpc.queued_rpc.integration.e2e_xfail.dma] begin (0)
+2024-09-18 18:06:27.236827 137 N runtests ------------------------------------------------------------
+2024-09-18 18:06:27.236924 137 I zrpc.test.queued_rpc_integration parsed config <client_iface=veth1, client_ip=fe80::ac12:7ff:feaa:4b17%veth1, client_port=8000, server_iface=veth2, server_ip=fe80::280d:8bff:fe67:8c86%veth2, server_port=8001, vlan=42>
+2024-09-18 18:06:27.237120 137 I zrpc.test.queued_rpc_integration Using src addrs <mac=AE:12:07:AA:4B:17, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=fe80::ac12:7ff:feaa:4b17:8000>, dst addrs <mac=2A:0D:8B:67:8C:86, vlan=<request_vlan_info=<vlan_id=42, pcp=0>, response_pcp=<vlan_id=42, pcp=0>>, inet=fe80::280d:8bff:fe67:8c86:8001>
+EAL: Detected CPU lcores: 4
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: WARNING! Base virtual address hint (0x100005000 != 0x7f9256300000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x10000b000 != 0x7f925623f000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+EAL: WARNING! Base virtual address hint (0x100011000 != 0x7f925223f000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:06:27.248164 137 I zrpc.test.queued_rpc_integration Random seed for test is 3436271679
+2024-09-18 18:06:27.387672 137 I zrpc.dpdk_tools Driver<af_packet>: Configuring 1 rxq(s) with 256 entries and 1 txq(s) with 256 entries on port 0
+2024-09-18 18:06:27.387736 137 I zrpc.dpdk_tools Adding bpf filter on fd 9 with vlan 0 and mac AE:12:07:AA:4B:17
+EAL: WARNING! Base virtual address hint (0x100017000 != 0x7f924f1de000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:06:27.405330 137 I zrpc.dpdk_tools ir_dpdk_heap-1: External memory heap <VA=[0x7f924f23f000, 0x7f925123f000)> usable <VA=[0x7f924f3d8980, 0x7f925123efe6)>
+2024-09-18 18:06:27.405713 137 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:06:27.405790 137 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 1500
+2024-09-18 18:06:27.406220 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.406235 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.407309 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.407312 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.409370 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.409375 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.413435 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.413439 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.421502 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.421506 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.437573 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.437577 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.469664 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.469700 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.533781 137 I zrpc.test.queued_rpc_integration sending rpc with buffer size 3000, mtu 1500
+2024-09-18 18:06:27.534023 137 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:27.534029 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.535091 137 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:27.535093 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.537153 137 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:27.537155 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.541213 137 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:27.541216 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.549280 137 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:27.549287 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.565354 137 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:27.565359 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.597432 137 I zrpc.test.queued_rpc_integration trying to read up to 3096 bytes
+2024-09-18 18:06:27.597436 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.664141 137 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-1 index=17
+2024-09-18 18:06:27.664268 137 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-1
+EAL: WARNING! Base virtual address hint (0x10001d000 != 0x7f924f1de000) not respected!
+EAL:    This may cause issues with mapping memory into secondary processes
+2024-09-18 18:06:27.682566 137 I zrpc.dpdk_tools ir_dpdk_heap-2: External memory heap <VA=[0x7f924f23f000, 0x7f925123f000)> usable <VA=[0x7f924f3d8980, 0x7f925123efe6)>
+2024-09-18 18:06:27.682740 137 I osenv.affinity_unix Created jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:06:27.682779 137 I zrpc.test.queued_rpc_integration sending rpc with buffer size 0, mtu 9216
+2024-09-18 18:06:27.683106 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.683119 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.684191 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.684195 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.686257 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.686259 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.690325 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.690327 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.698400 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.698404 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.714474 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.714479 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.746547 137 I zrpc.test.queued_rpc_integration trying to read up to 32 bytes
+2024-09-18 18:06:27.746551 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.810631 137 I zrpc.test.queued_rpc_integration sending rpc with buffer size 18432, mtu 9216
+2024-09-18 18:06:27.810969 137 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:27.810976 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.812042 137 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:27.812045 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.814107 137 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:27.814110 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.818173 137 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:27.818176 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.826238 137 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:27.826242 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.842307 137 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:27.842312 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.874382 137 I zrpc.test.queued_rpc_integration trying to read up to 18528 bytes
+2024-09-18 18:06:27.874388 137 I zrpc.test.queued_rpc_integration got EAGAIN/EWOULDBLOCK
+2024-09-18 18:06:27.939741 137 I osenv.affinity_unix Destroying jemalloc aux arena: name=buf_p-ir_dpdk_heap-2 index=17
+2024-09-18 18:06:27.939837 137 I zrpc.dpdk_tools Destroying packet heap ir_dpdk_heap-2
+2024-09-18 18:06:27.944227 137 I zrpc.dpdk_tools release port 0
+2024-09-18 18:06:28.014781 137 I runtests Exiting because all tests are run
+2024-09-18 18:06:28.014815 137 I runtests Ran 1/1 tests in 778.051ms
+2024-09-18 18:06:28.014819 137 N runtests ------------------------------------------------------------
+2024-09-18 18:06:28.014820 137 N runtests Slowest running tests:
+2024-09-18 18:06:28.014822 137 N runtests 777.946ms : zrpc.queued_rpc.integration.e2e_xfail.dma
+2024-09-18 18:06:28.014824 137 N runtests ------------------------------------------------------------
