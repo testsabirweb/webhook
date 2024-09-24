@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 	"os"
+	"regexp"
 	"sort"
 	"strings"
 	"sync"
-	"unicode"
 )
 
 type wordFreq struct {
@@ -14,14 +14,11 @@ type wordFreq struct {
 	count int
 }
 
-func cleanWord(word string) string {
-	var sb strings.Builder
-	for _, r := range word {
-		if unicode.IsLetter(r) || unicode.IsNumber(r) {
-			sb.WriteRune(unicode.ToLower(r))
-		}
-	}
-	return sb.String()
+var wordRegex = regexp.MustCompile(`[a-zA-Z0-9]+`)
+
+func cleanWord(word string) []string {
+	matches := wordRegex.FindAllString(strings.ToLower(word), -1)
+	return matches
 }
 
 func readFile(filename string, wg *sync.WaitGroup, wordchan chan string) {
@@ -37,14 +34,15 @@ func readFile(filename string, wg *sync.WaitGroup, wordchan chan string) {
 	words := strings.Fields(string(data))
 
 	for _, word := range words {
-		cleanedWord := cleanWord(word)
-		if cleanedWord != "" {
-			wordCount[cleanedWord]++
-			wordchan <- cleanedWord
+		cleanedWords := cleanWord(word)
+		for _, cleanedWord := range cleanedWords {
+			if cleanedWord != "" {
+				wordCount[cleanedWord]++
+				wordchan <- cleanedWord
+			}
 		}
 	}
-
-	// fmt.Println(filename, wordCount)
+	// fmt.Println(filename,wordCount)
 }
 
 func countWords(totalWordCount map[string]int, wordchan chan string, done chan bool) {
@@ -79,7 +77,9 @@ func main() {
 
 	fmt.Println("####################")
 	sortedWords := sortByFrequency(totalWordCount)
-	fmt.Println(sortedWords[:10])
+	for i := 0; i < 10 && i < len(sortedWords); i++ {
+		fmt.Printf("%s: %d\n", sortedWords[i].word, sortedWords[i].count)
+	}
 }
 
 func sortByFrequency(wordCount map[string]int) []wordFreq {
