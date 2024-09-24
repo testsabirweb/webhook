@@ -42,56 +42,24 @@ kubectl run nginx --image=nginx --restart=Never
 kubectl run nginx2 --image=nginx --restart=Never --labels="spectro=true"
 ```
 
-### Output
-## nginx
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  creationTimestamp: "2024-09-20T11:57:30Z"
-  labels:
-    run: nginx
-  name: nginx
-  namespace: default
-  resourceVersion: "131728"
-  uid: a1612e10-4588-481f-9c4c-b392b1ee6aab
-spec:
-  containers:
-  - image: nginx
-    imagePullPolicy: Always
-    name: nginx
-    resources: {}
-    terminationMessagePath: /dev/termination-log
-    terminationMessagePolicy: File
-    volumeMounts:
-    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-lnrm4
-      readOnly: true
-```
 
-## nginx2
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  creationTimestamp: "2024-09-20T12:02:08Z"
-  labels:
-    custom_label: custom_value
-    spectro: "true"
-  name: nginx2
-  namespace: default
-  resourceVersion: "131957"
-  uid: 666e9113-0c36-467f-a186-8c430b7d37d2
-spec:
-  containers:
-  - image: nginx
-    imagePullPolicy: Always
-    name: nginx2
-    resources: {}
-    terminationMessagePath: /dev/termination-log
-    terminationMessagePolicy: File
-    volumeMounts:
-    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-s2tpp
-      readOnly: true
-```
+kk apply -f manifests/configmap.yaml
+kk apply -f manifests/service-account.yaml
+kk apply -f manifests/role.yaml
+kk apply -f manifests/role-binding.yaml
+
+
+kk apply -f manifests/webhook-deploy.yaml 
+
+kk run nginx --image=nginx --restart=Never
+
+kk describe pod/nginx
+Name:             nginx
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             edge-ec2b652c1eb48dd2acf82802b05d1f12/10.0.2.158
+Start Time:       Tue, 24 Sep 2024 09:55:14 +0000
+Labels:           environment=production
+                  run=nginx
+                  team=devops
