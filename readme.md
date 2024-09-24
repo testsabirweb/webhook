@@ -42,6 +42,7 @@ kubectl run nginx --image=nginx --restart=Never
 kubectl run nginx2 --image=nginx --restart=Never --labels="spectro=true"
 ```
 
+```bash
 
 kk apply -f manifests/configmap.yaml
 kk apply -f manifests/service-account.yaml
@@ -51,9 +52,16 @@ kk apply -f manifests/role-binding.yaml
 
 kk apply -f manifests/webhook-deploy.yaml 
 
-kk run nginx --image=nginx --restart=Never
+kk apply -f manifests/webhook.yaml 
 
+kk run nginx --image=nginx --restart=Never -n sabir
+```
+
+```bash
 kk describe pod/nginx
+```
+
+```yaml
 Name:             nginx
 Namespace:        default
 Priority:         0
@@ -63,3 +71,4 @@ Start Time:       Tue, 24 Sep 2024 09:55:14 +0000
 Labels:           environment=production
                   run=nginx
                   team=devops
+```
