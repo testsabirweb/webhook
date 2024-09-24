@@ -12,6 +12,7 @@ spec:
       labels:
         app: spectro-webhook
     spec:
+      serviceAccountName: spectro-webhook-sa
       volumes:
         - name: certs
           secret:
@@ -19,7 +20,7 @@ spec:
       containers:
         - name: webhook
           image: sabir9644/spectro_webhook:v2
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           volumeMounts:
             - mountPath: /etc/certs
               name: certs
