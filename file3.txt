@@ -1,0 +1,2 @@
+The Go programming language is designed for ease of use, and Go's concurrency model is
+a core feature.
