@@ -5,3 +5,4 @@ tls.crt
 tls.csr
 tls.key
 manifests/webhook.yaml
+k8s.cfg

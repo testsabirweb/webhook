@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -10,9 +11,21 @@ import (
 	v1 "k8s.io/api/admission/v1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/client-go/kubernetes"
+	"k8s.io/client-go/rest"
 )
 
+var clientset *kubernetes.Clientset
+
 func main() {
+	var err error
+
+	// Initialize the Kubernetes clientset once
+	clientset, err = initializeClientset()
+	if err != nil {
+		log.Fatalf("Failed to initialize Kubernetes client: %v", err)
+	}
+
 	r := gin.Default()
 
 	r.GET("/ping", func(c *gin.Context) {
@@ -30,11 +43,28 @@ func main() {
 	log.Println("Server started on https://localhost:8080/")
 }
 
+func initializeClientset() (*kubernetes.Clientset, error) {
+	// Use the in-cluster config to connect to Kubernetes
+	config, err := rest.InClusterConfig()
+	if err != nil {
+		return nil, fmt.Errorf("failed to create in-cluster config: %v", err)
+	}
+
+	// Create a new Kubernetes clientset
+	clientset, err := kubernetes.NewForConfig(config)
+	if err != nil {
+		return nil, fmt.Errorf("failed to create Kubernetes client: %v", err)
+	}
+
+	return clientset, nil
+}
+
 func handleMutate(c *gin.Context) {
+	labels := getLabelsFromConfigMap(clientset)
+	log.Printf("labels fetched from configmap %v", labels)
 	admissionReview := v1.AdmissionReview{}
 	var err error
 
-	// Error handling for JSON binding
 	if err = c.BindJSON(&admissionReview); err != nil {
 		log.Printf("Failed to bind AdmissionReview: %v", err)
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid AdmissionReview payload"})
@@ -61,8 +91,7 @@ func handleMutate(c *gin.Context) {
 		UID: admissionReviewReq.UID,
 	}
 
-	// Add label to pod
-	patch, err := addLabel(&pod)
+	patch, err := addLabel(&pod, labels)
 	if err != nil {
 		response.Allowed = false
 		response.Result = &metav1.Status{
@@ -84,29 +113,31 @@ func handleMutate(c *gin.Context) {
 	c.JSON(http.StatusOK, admissionReview)
 }
 
-func addLabel(pod *corev1.Pod) ([]byte, error) {
+func addLabel(pod *corev1.Pod, labels map[string]string) ([]byte, error) {
 	var patch []map[string]interface{}
 
-	// Get existing labels from the Pod
-	labels := pod.GetLabels()
-	_, isCustomLabelPresent := labels["custom_label"]
-
-	// If custom_label is not present, add it
-	if !isCustomLabelPresent {
+	for key, value := range labels {
 		patch = append(patch, map[string]interface{}{
 			"op":    "add",
-			"path":  "/metadata/labels/custom_label",
-			"value": "custom_value",
+			"path":  fmt.Sprintf("/metadata/labels/%s", key),
+			"value": value,
 		})
-		log.Printf("Adding custom_label to pod %s", pod.Name)
-	} else {
-		log.Printf("custom_label already exists on pod %s", pod.Name)
 	}
 
-	// Convert the patch to JSON
+	log.Printf("Adding labels to pod %s", pod.Name)
+
 	patchBytes, err := json.Marshal(patch)
 	if err != nil {
 		return nil, fmt.Errorf("failed to marshal patch: %w", err)
 	}
 	return patchBytes, nil
+}
+
+func getLabelsFromConfigMap(clientset *kubernetes.Clientset) map[string]string {
+	// Get the ConfigMap from the 'default' namespace with name 'label-config'
+	configMap, err := clientset.CoreV1().ConfigMaps("default").Get(context.TODO(), "label-config", metav1.GetOptions{})
+	if err != nil {
+		log.Fatalf("Failed to get ConfigMap: %v", err)
+	}
+	return configMap.Data
 }

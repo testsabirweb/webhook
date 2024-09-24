@@ -18,7 +18,7 @@ spec:
             secretName: tls
       containers:
         - name: webhook
-          image: spectro_webhook:v1
+          image: sabir9644/spectro_webhook:v2
           imagePullPolicy: Never
           volumeMounts:
             - mountPath: /etc/certs

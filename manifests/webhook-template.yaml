@@ -8,9 +8,6 @@ webhooks:
       - "v1"
     sideEffects: "None"
     timeoutSeconds: 30
-    objectSelector:
-      matchLabels:
-        spectro: "true"
     clientConfig:
       service:
         name: spectro-webhook
