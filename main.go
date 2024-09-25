@@ -45,9 +45,11 @@ func readFile(filename string, wg *sync.WaitGroup, wordchan chan string) {
 	// fmt.Println(filename,wordCount)
 }
 
-func countWords(totalWordCount map[string]int, wordchan chan string, done chan bool) {
+func countWords(totalWordCount map[string]int, wordchan chan string, done chan bool, mutex *sync.Mutex) {
 	for word := range wordchan {
+		mutex.Lock()
 		totalWordCount[word]++
+		mutex.Unlock()
 	}
 	done <- true
 }
@@ -70,12 +72,13 @@ func main() {
 	}()
 
 	done := make(chan bool)
-	go countWords(totalWordCount, wordchan, done)
+	var mutex sync.Mutex
+	go countWords(totalWordCount, wordchan, done, &mutex)
 	<-done
 	close(done)
 	fmt.Println(totalWordCount)
 
-	fmt.Println("####################")
+	fmt.Println("#################### Top 10 ###################")
 	sortedWords := sortByFrequency(totalWordCount)
 	for i := 0; i < 10 && i < len(sortedWords); i++ {
 		fmt.Printf("%s: %d\n", sortedWords[i].word, sortedWords[i].count)
